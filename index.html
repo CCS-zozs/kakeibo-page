@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>家計簿</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>シンプルな家計簿</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
   </head>
   <body>
     <header>
-      <h1>家計簿</h1>
+      <h1>シンプルな家計簿</h1>
       <p>日々の収入と支出を記録しましょう。</p>
     </header>
 
@@ -21,15 +21,27 @@
 
       <section aria-labelledby="entry-heading">
         <h2 id="entry-heading">記録を追加</h2>
-        <p id="app-status" class="app-status" role="status" aria-live="polite" hidden></p>
+        <p
+          id="app-status"
+          class="app-status"
+          role="status"
+          aria-live="polite"
+          hidden
+        ></p>
         <form>
           <p>
             <label for="entry-date">日付</label>
-            <input id="entry-date" name="date" type="date" required>
+            <input id="entry-date" name="date" type="date" required />
           </p>
           <p>
             <label for="entry-item">品目</label>
-            <input id="entry-item" name="item" type="text" autocomplete="off" required>
+            <input
+              id="entry-item"
+              name="item"
+              type="text"
+              autocomplete="off"
+              required
+            />
           </p>
           <p>
             <label for="entry-type">収支</label>
@@ -40,7 +52,15 @@
           </p>
           <p>
             <label for="entry-amount">金額（円）</label>
-            <input id="entry-amount" name="amount" type="number" min="1" step="1" inputmode="numeric" required>
+            <input
+              id="entry-amount"
+              name="amount"
+              type="number"
+              min="1"
+              step="1"
+              inputmode="numeric"
+              required
+            />
           </p>
           <button type="submit">追加</button>
         </form>
